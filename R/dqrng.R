@@ -1,0 +1,8 @@
+install.packages("dqrng")
+library(dqrng)
+dqrng::dqset.seed(seed = 1, stream = 1)
+dqrunif(n = 1, min = 0, max = 1)
+dqrng::dqset.seed(seed = 1, stream = 2)
+dqrunif(n = 1, min = 0, max = 1)
+dqrng::dqset.seed(seed = 1, stream = 2)
+runif(n = 1, min = 0, max = 1)
